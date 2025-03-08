@@ -6,12 +6,12 @@ using System.Net.Mail;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SOLIDPrinciple
+namespace SOLIDPrinciple.SRP
 {
     public class UserService
     {
         EmailService _emailService;
-       
+
         public UserService(EmailService aEmailService)
         {
             _emailService = aEmailService;
@@ -27,6 +27,6 @@ namespace SOLIDPrinciple
 
             //SendEmail(new MailMessage("mysite@nowhere.com", email) { Subject = "HEllo foo" });
         }
-       
+
     }
 }
